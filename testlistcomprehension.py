@@ -1,7 +1,9 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+def generate_fruit_basket(fruits):
+    """Without list comprehension"""
+    basket = []
+    for fruit in fruits:
+        if fruit != "grapes":
+            basket.append(fruit)
+    return basket
 
-new_list_numbers = []
-
-for i in numbers:
-
-    new_list_numbers.append(i * 2)
+print(generate_fruit_basket(['apples','grapes','bananas','watermelons']))
