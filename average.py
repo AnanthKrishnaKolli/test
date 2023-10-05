@@ -14,13 +14,10 @@ def calculate_average(numbers):
     return average
 
 def main():
-    try:
-        n = int(input("Enter the number of random numbers to generate: "))
-        if n <= 0:
-            raise ValueError("Please enter a positive number.")
-    except ValueError as e:
-        print(f"Error: {e}")
-        return
+
+    n = int(input("Enter the number of random numbers to generate: "))
+    if n <= 0:
+        raise ValueError("Please enter a positive number.")
     
     random_numbers = generate_random_numbers(n)
     
