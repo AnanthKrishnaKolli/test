@@ -3,18 +3,15 @@ def calculate_division(a, b):
     return result
 
 def perform_calculation(x, y):
-    try:
-        division_result = calculate_division(x, y)
-        print(f"Result of division: {division_result}")
-        
-        if division_result == "Infinity":
-            raise Exception("Division by zero occurred!")
-        
-        return division_result
-    except ZeroDivisionError as zde:
-        print(f"ZeroDivisionError: {zde}")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+   
+    division_result = calculate_division(x, y)
+    print(f"Result of division: {division_result}")
+    
+    if division_result == "Infinity":
+        raise Exception("Division by zero occurred!")
+    
+    return division_result
+
 
 def main():
     try:
